@@ -1,0 +1,76 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="pos-f-t" style="z-index: 10; width: 100%;">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Lister.com</h5>
+      <span class="text-muted">Everything you add, It becomes List Here !</span>
+    </div>
+    <div class="bg-dark p-2">
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="form-inline">
+      <h5 class="text-muted h5" style="cursor: pointer;">Customer</h5>
+      <h5 class="text-muted h5" >/</h5>
+      <h5 class="text-muted h5" style="cursor: pointer;">Vendor</h5>
+    </form>
+  </nav>
+</div>
+
+<!-- List Starts -->
+<div class="container" style="text-align: center;">
+  <div class="row" style="padding-top: 5%;">
+    <div class="col">
+      ID
+    </div>
+    <div class="col">
+      Name
+    </div>
+    <div class="col">
+      Email
+    </div>
+    <div class="col">
+      Gender
+    </div>
+  </div>
+  <div class="row" (click)="onRowClick(student.id);" *ngFor="let student of students" style="cursor: pointer; padding-top: 3%;">
+    <div class="col">
+      {{student.id}}
+    </div>
+    <div class="col">
+      {{student.name}}
+    </div>
+    <div class="col">
+      {{student.email}}
+    </div>
+    <div class="col">
+      {{student.gender}}
+    </div>
+    <div class="row" *ngIf="student.selected==true">
+      Displayed!!!!
+    </div>
+  </div>
+</div>
+<!-- List Ends -->
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
