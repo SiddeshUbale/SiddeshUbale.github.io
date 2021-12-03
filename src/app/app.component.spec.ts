@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'DemoTableApp2'`, () => {
+  it(`should have as title 'json2angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('DemoTableApp2');
+    expect(app.title).toEqual('json2angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('DemoTableApp2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('json2angular app is running!');
   });
 });
