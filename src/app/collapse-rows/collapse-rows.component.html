@@ -1,0 +1,149 @@
+<!-- <table class="table" style="width: 1200px;">
+  <thead>
+    <tr>
+      <th>Customer ID</th>
+      <th>Customer Name</th>
+      <th>Customer Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="Class+{{row.ID}}" *ngFor="let row of data">
+        <td>
+          <a href="#" (click)="toggleOn(row.ID)">|||</a>
+          {{row.ID}}
+        </td>
+        <td>{{row.Name}}</td>
+        <td>{{row.Email}}</td><br>
+      <ng-container *ngIf="row.Expandable==true">
+        <div style="position: relative;
+        margin-top: 5%;
+        margin-left: -183%;">
+          <b>Address :-</b> {{row.Address}}<br>
+          <b>Phone :-</b>{{row.Phone}}
+        </div>
+      </ng-container>
+    </tr>
+  </tbody>
+</table> -->
+
+<div class="pos-f-t" style="z-index: 10; width: 100%;">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Lister.com</h5>
+      <span class="text-muted">Everything you add, It becomes List Here !</span>
+    </div>
+    <div class="bg-dark p-2">
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="form-inline">
+      <h5 class="text-muted h5" style="cursor: pointer;">Customer</h5>
+      <h5 class="text-muted h5" >/</h5>
+      <h5 class="text-muted h5" style="cursor: pointer;">Vendor</h5>
+    </form>
+  </nav>
+</div>
+
+<!-- <div class="container bg-image"></div> -->
+<span style="color: #83807f">
+  <hr style="width: auto;text-align: center;margin-left: 0;border-color: rgba(153, 149, 149, 0.651); margin-top: 5%;">
+  <div class="row" style="text-align: center;">
+    <div class="col-xs-6 col-md-4"><b> Customer ID </b></div>
+    <div class="col-xs-6 col-md-4"><b> Customer Name </b></div>
+    <div class="col-xs-6 col-md-4"><b> Customer Email </b></div>
+  </div>
+  <hr style="width: auto;text-align: center;margin-left: 0;border-color: rgba(153, 149, 149, 0.651);">
+
+  <span *ngFor="let row of data" style="text-align: center; margin-bottom: 5%;">
+
+    <div class="row" (click)="toggleOn(row.ID)" style="cursor: pointer;">
+      <div class="col-xs-6 col-md-4">
+        <!-- <a href="#" (click)="toggleOn(row.ID)">|||</a> -->
+            {{row.ID}}
+      </div>
+      <div class="col-xs-6 col-md-4">
+        {{row.Name}}
+      </div>
+      <div class="col-xs-6 col-md-4">
+        {{row.Email}}
+      </div>
+    </div>
+
+    <div *ngIf="row.Expandable==true"><br>
+      <div class="row" style="margin-left:12%">
+        <b><u>Details</u>:- </b>
+      </div>
+      <div class="row" style="margin-left: 14%">
+        <b>ID:- </b>{{row.ID}}
+      </div>
+      <div class="row" style="margin-left: 14%">
+        <b>Name:- </b>{{row.Name}}
+      </div>
+      <div class="row" style="margin-left: 14%">
+        <b>Email:- </b>{{row.Email}}
+      </div>
+      <div class="row" style="margin-left: 14%">
+        <b>Address:-</b> {{row.Address}}
+      </div>
+      <div class="row" style="margin-left: 14%">
+        <b>Phone:-</b>{{row.Phone}}
+      </div>
+    </div>
+    <hr style="width: auto;text-align: center;margin-left: 0;border-color: rgba(153, 149, 149, 0.651);">
+  </span>
+</span>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4" style="z-index: 100;margin-top: 7%; width: 100%">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <!-- Form -->
+        <form class="form-inline">
+          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+            aria-label="Search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </form>
+        <!-- Form -->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <form class="input-group">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email"
+            aria-label="Your email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+          </div>
+        </form>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

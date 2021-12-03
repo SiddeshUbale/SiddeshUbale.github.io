@@ -1,0 +1,27 @@
+.bg-image {
+    background-image: url("https://wallpapercave.com/wp/wp5320784.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    z-index: 1;
+    width: 87%;
+    min-height: 50%;
+}

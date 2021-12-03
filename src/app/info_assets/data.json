@@ -1,0 +1,26 @@
+[
+  {
+    "ID": "AA001",
+    "Name": "Mandar",
+    "Email": "Mandar@kumowiz.com",
+    "Address": "Pune City, Maharashtra",
+    "Phone": 1234567890,
+    "Expandable": true
+  },
+  {
+    "ID": "AA002",
+    "Name": "Naresh",
+    "Email": "Naresh@kumowiz.com",
+    "Address": "Pune City, Maharashtra",
+    "Phone": 1234567890,
+    "Expandable": false
+  },
+  {
+    "ID": "AA003",
+    "Name": "Siddesh",
+    "Email": "Siddesh@kumowiz.com",
+    "Address": "Pune City, Maharashtra",
+    "Phone": 1234567890,
+    "Expandable": false
+  }
+]
